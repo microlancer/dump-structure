@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+        "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+        "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <!--
+    Suppress checks for hidden files and folders
+    -->
+    <suppress files="[/\\]\..+" checks=".*"/>
+
+    <!--
+    Suppress checks for archives, classes and other binary files
+    -->
+    <suppress files=".+\.(?:jar|zip|war|class|tar|bin)$" checks=".*"/>
+
+    <!--
+    Suppress checks for image files
+    -->
+    <suppress files=".+\.(?:png|gif|jpg|jpeg)$" checks=".*"/>
+
+    <!--
+    Suppress checks for non-java files
+    -->
+    <suppress files=".+\.(?:txt|xml|csv|sh|thrift|html|sql|eot|ttf|woff|css|png)$" checks=".*"/>
+</suppressions>
